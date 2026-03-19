@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome {{ user.name }}</h2>
+
+    <div class="user-info">
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Provider:</strong> {{ user.provider }}</p>
+    </div>
+    
+    <a href="/logout" class="logout">Logout</a>
+</div>
+
+</body>
+</html>

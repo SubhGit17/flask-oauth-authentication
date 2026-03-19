@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign in</h2>
+
+    <a class="btn google" href="/login/google">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="icon">
+        Continue with Google
+    </a>
+
+    <a class="btn facebook" href="/login/facebook">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" class="icon">
+        Continue with Facebook
+    </a>
+
+    <a class="btn x" href="/login/x">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" class="icon x-icon">
+        Continue with X
+    </a>
+
+</div>
+
+</body>
+</html>

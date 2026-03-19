@@ -163,5 +163,9 @@ def logout():
     session.clear()
     return redirect(url_for("home"))
 
+@app.route("/delete")
+def delete_data():
+    return "To delete your data, contact: shubhusourav17@gmail.com"
+
 if __name__ == "__main__":
     app.run(debug=True, ssl_context="adhoc")
